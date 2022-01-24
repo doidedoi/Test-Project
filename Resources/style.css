@@ -1,23 +1,65 @@
-h1 {
-    color: red;
-}
-
-.description {
-    font-size: large;
-    /* border: 1px solid black; */
-}
-
 body {
     position: relative;
-    top: 100px;
+    /* top: 100px; */
     background-image: url(./Images/wallpaper\ blue\ man.png);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
 }
 
-li {
-    display: inline-flex;
+
+.navBar {
+    background-color: rgb(235, 218, 218);
+    border-radius: 20px;
+}
+
+.navBar li {
+    /* Elements (lists) will float on the left side */
+    float: left;
+    /* to remove the bullet points from the list */
+    list-style: none;
+    /* When we float anything, it gets overflown from the parent */
+    margin: 13px 2px;
+    /* padding: 20px; */
+}
+
+.navBar ul {
+    /* It ruined the background color / the list items were going out of the flow, 
+    in order to rectify this issue, we have used the following - overflow */
+    overflow: auto;
+}
+
+.navBar li a {
+    padding: 3px 10px;
+    margin: 0px 10px;
+    /* To remove the underline from the links */
+    text-decoration: none;
+    color: blue;
+    font-weight: 800;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+.search {
+    float: right;
+    padding: 12px 75px;
+    /* color: white; */
+}
+
+.search input {
+    border: 2px solid;
+    border-radius: 3px;
+    padding: 3px 4px;
+    width: 130px;
+    margin: 0px 5px;
+}
+
+.navBar ul li a:hover {
+    color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+    font-size: larger;
+    background-color: rgb(18, 21, 24);
 }
