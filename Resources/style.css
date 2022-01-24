@@ -1,0 +1,23 @@
+h1 {
+    color: red;
+}
+
+.description {
+    font-size: large;
+    /* border: 1px solid black; */
+}
+
+body {
+    position: relative;
+    top: 100px;
+    background-image: url(./Images/wallpaper\ blue\ man.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+li {
+    display: inline-flex;
+}
